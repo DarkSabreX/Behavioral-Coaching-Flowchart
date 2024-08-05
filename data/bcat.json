@@ -1,0 +1,22 @@
+[
+    {
+        "id": "1",
+        "title": "Knowledge"
+    },
+    {
+        "id": "2",
+        "title": "Skill"
+    },
+    {
+        "id": "3",
+        "title": "Motivation"
+    },
+    {
+        "id": "4",
+        "title": "Will"
+    },
+    {
+        "id": "5",
+        "title": "last"
+    }
+]

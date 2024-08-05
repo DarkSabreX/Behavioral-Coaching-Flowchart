@@ -1,0 +1,23 @@
+
+    <md-card layout="column" layout-align="center center" class="slide">
+        <div layout="row" layout-align="space-between" flex="auto" layout-fill>
+            <div layout="column" layout-align="center center" flex="auto">
+                <md-card-content class="center-text">
+                    <h1>Recommended Action:</h1>
+                    <h2>{{ $ctrl.behavior.result }}</h2>
+                    <div layout="row" layout-align="space-between" class="explanation">
+                        <div style="text-align: left" flex>{{ $ctrl.behavior.explanation }}</div>
+                    </div>
+                </md-card-content>
+                <md-card-actions layout="row" layout-align="end center" md-theme="buttons">
+                    <md-button class="md-raised md-accent md-hue-3" ui-sref="step({stepId: 1})">Start Over</md-button>
+                    <md-button class="md-raised md-accent" ui-sref="tree">View Flowchart</md-button>
+                </md-card-actions>
+            </div>
+            <div ng-class="$ctrl.behavior.category" flex="5" layout="column" layout-align="center center" ng-hide="$ctrl.behavior.last">
+                <h4 class="sideTitle">
+                    {{$ctrl.behavior.category}}
+                </h4>
+            </div>
+        </div>        
+    </md-card>

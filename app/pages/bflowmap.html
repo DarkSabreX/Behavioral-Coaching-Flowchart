@@ -1,0 +1,59 @@
+<md-card layout="column" layout-align="space-around center">
+    <div layout="row" layout-align="space-between center" ng-repeat="category in $ctrl.categories track by category.id" flex="auto" ng-class="category.title" layout-fill ng-cloak>
+        <div layout="column" flex="auto">
+            <div layout="column" ng-repeat="behavior in $ctrl.behaviors | filter:{ category: category.title }" ng-cloak>
+                    <div layout="row">
+                        <md-card flex ng-hide="behavior.last">
+                            <md-button ui-sref="step({stepId: behavior.id})" class="flowchart" flex>
+                                <md-card-content class="flowcard">
+                                    <p>
+                                        {{behavior.question}}
+                                    </p>
+                                </md-card-content>
+                            </md-button>
+                            <md-tooltip class="tooltip-lg tooltip-font-size" flex>
+                                Suggested Questions
+                                <ul>
+                                    <li ng-repeat="question in behavior.suggestedQuestions">{{question.option}}</li>
+                                </ul>
+                            </md-tooltip>
+                        </md-card>
+                        <div layout="column" layout-align="center center" ng-hide="behavior.last">
+                            <div flex="auto"></div>
+                            <i class="material-icons" flex="auto">
+                                arrow_forward
+                            </i>
+                            <div flex="auto">{{behavior.hit.buttonText}}</div>
+                        </div> 
+                        <md-card flex>
+                            <md-button class="flowchart" ui-sref="action({ stepId: behavior.id })" flex>
+                                <md-card-content class="flowcard">
+                                    <p>
+                                        {{behavior.result}}
+                                    </p>
+                                </md-card-content>
+                            </md-button>
+                            <md-tooltip class="tooltip-font-size">
+                                {{behavior.explanation}}
+                            </md-tooltip>
+                        </md-card>
+                    </div>
+                    <div layout="row" layout-align="center center" flex="auto">
+                        <div flex="10"></div>
+                        <div flex="auto">{{behavior.miss.buttonText}}</div>
+                        <i class="material-icons" ng-hide="behavior.last" flex="auto">
+                            arrow_downward
+                        </i>
+                        <div flex="70"></div>
+                    </div>
+                </div>
+        </div>
+        
+        <div flex="5" layout="column" layout-align="center center" ng-hide="category.title == 'last'">
+            <h4 class="sideTitle" flex="auto">{{category.title}}</h4>
+        </div>
+    </div>
+</md-card>
+<md-card layout="column" layout-align="space-around center">
+    <md-button class="md-raised md-accent" ui-sref="step({stepId: 1})">Back to the Interactive Flowchart</md-button>
+</md-card>

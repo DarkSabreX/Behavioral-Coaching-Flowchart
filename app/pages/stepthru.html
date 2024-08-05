@@ -1,0 +1,32 @@
+<div>
+    <md-card layout="column" layout-align="center stretch">
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline center-text">{{ $ctrl.behavior.question }}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content> 
+            <h4 class="center-text">Here are some suggested probing questions to use to help determine if this is the root cause:</h4>
+            <div layout="row" flex="auto">
+                <div flex="25"></div>
+                <div flex="auto">
+                        <ul>
+                            <li ng-repeat="question in $ctrl.behavior.suggestedQuestions">{{question.option}}</li>
+                        </ul>
+                    </div>
+                    <div flex="auto"></div>
+                </div>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="center center">
+            <md-button md-theme="miss" class="md-raised md-primary" ui-sref="{{$ctrl.behavior.miss.buttonURL}}">{{$ctrl.behavior.miss.buttonText}} - Move to next Root Cause</md-button>
+            <md-button md-theme="hit" class="md-raised md-primary" ui-sref="{{$ctrl.behavior.hit.buttonURL}}">{{$ctrl.behavior.hit.buttonText}} - View Recommended Action</md-button>
+        </md-card-actions>
+    </md-card>
+    <md-card>
+        <md-card-actions layout="row" layout-align="center center" md-theme="buttons">
+            <md-button class="md-raised md-accent md-hue-2" ui-sref="step({stepId: $ctrl.behavior.id - 1})" ng-hide="$ctrl.behavior.id < 2">Back</md-button>
+            <md-button class="md-raised md-accent md-hue-3" ui-sref="step({stepId: 1})" ng-hide="$ctrl.behavior.id < 3">Start Over</md-button>
+            <md-button class="md-raised md-accent" ui-sref="tree">View Flowchart</md-button>
+        </md-card-actions>
+    </md-card>
+</div>

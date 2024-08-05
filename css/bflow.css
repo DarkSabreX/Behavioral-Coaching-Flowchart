@@ -1,0 +1,75 @@
+@import "/content/AFNI/publications/2910/wor/wo_4466/node_modules/roboto-npm-webfont/style.css";
+@import "/content/AFNI/publications/2910/wor/wo_4466/node_modules/material-design-icons/iconfont/material-icons.css";
+
+.sideTitle {
+    text-transform: capitalize;
+    /* Safari */
+    -webkit-transform: rotate(90deg);
+
+    /* Firefox */
+    -moz-transform: rotate(90deg);
+
+    /* IE */
+    -ms-transform: rotate(90deg);
+
+    /* Opera */
+    -o-transform: rotate(90deg);
+
+    /* Internet Explorer */
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+}
+.Knowledge {
+    background-color: #e3f2fd;
+}
+.Skill {
+    background-color: #bbdefb;
+}
+.Motivation {
+    background-color: #90caf9;
+}
+.Will {
+    background-color: #64b5f6;
+}
+.last {
+    background-color: white;
+    text-align: center;
+}
+
+.center-text {
+    text-align: center;
+}
+.ng-enter, .ng-hide-remove {
+    /* transition on enter for .5s */
+    transition: .5s;
+
+    /* start with opacity 0 (invisible) */
+    opacity: 0;
+}
+.ng-enter-active, .ng-hide-remove.ng-hide-remove-active {
+    /* end with opacity 1 (fade in) */
+    opacity: 1;
+}
+
+.tooltip-lg {
+    max-height: 100px !important;
+    height: 80px !important;
+    min-height: 40px !important;
+}
+.tooltip-font-size {
+    font-size: .8em !important;
+}
+
+.md-button.flowchart {
+    white-space: normal;
+    text-transform: none;
+    margin: 0;
+    height: 100%;
+}
+
+md-card md-card-content.flowcard{
+    padding: 0;
+}
+
+.explanation {
+    width: 600px;
+}

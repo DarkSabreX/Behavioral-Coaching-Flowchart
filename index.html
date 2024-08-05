@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>ALPS Competency Calculator</title>
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	<link href="/node_modules/angular-material/angular-material.css" rel="stylesheet" type="text/css">
+	<!-- Custom Stylesheet -->
+	<link href="/css/bflow.css" rel="stylesheet" type="text/css">
+	<!--Load js shims-->
+	<script type="text/javascript" src="/node_modules/es5-shim/es5-shim.js"></script>
+	<script type="text/javascript" src="/node_modules/es6-shim/es6-shim.js"></script>
+	<!--Load Angular and Ui Router-->
+	<script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="/node_modules/angular-ui-router/angular-ui-router.js"></script>
+
+	<!-- Load Angular Material and dependencies-->
+	<script type="text/javascript" src="/node_modules/angular-animate/angular-animate.js"></script>
+	<script type="text/javascript" src="/node_modules/angular-aria/angular-aria.js"></script>
+	<script type="text/javascript" src="/node_modules/angular-messages/angular-messages.js"></script>
+    <script type="text/javascript" src="/node_modules/angular-material/angular-material.js"></script>
+    
+    <!-- Load custom js-->
+	<script type="text/javascript" src="/app/bflow.app.js"></script>
+    <script type="text/javascript" src="/app/bflow.themeconfig.js"></script>
+    <script type="text/javascript" src="/app/bflow.routeconfig.js"></script>
+
+
+    <!-- Load Components-->
+    <script type="text/javascript" src="/app/components/container.js"></script>
+    <script type="text/javascript" src="/app/components/starthere.js"></script>
+	<script type="text/javascript" src="/app/components/stepthru.js"></script>
+	<script type="text/javascript" src="/app/components/bflowmap.js"></script>
+	<script type="text/javascript" src="/app/components/action.js"></script>
+    
+    <!-- Load Services-->
+	<script type="text/javascript" src="/app/services/bflowchart.service.js"></script>
+</head>
+<body class="bg" ng-app="bflow" layout="column" ng-cloak>
+    <ui-view flex></ui-view>  
+</body>
+</html>

@@ -1,0 +1,313 @@
+[
+    {
+        "id": "1",
+        "category": "Knowledge",
+        "question": "Do they know performance is unsatisfactory?",
+        "hit": {
+            "buttonText": "No",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "Yes",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Give them specific feedback",
+        "suggestedQuestions": [
+            {"option": "Where are you now with your performance?"},
+            {"option": "What progress have you made so far?"}
+        ],
+        "explanation": "This employee does not know their performance is unsatisfactory. Giving specific feedback on their performance and tips for improvement will help change this behavior."
+    },
+    {
+        "id": "2",
+        "category": "Knowledge",
+        "question": "Do they know what they’re supposed to do?",
+        "hit": {
+            "buttonText": "No",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "Yes",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Tell them!",
+        "suggestedQuestions": [
+            {"option": "What is required of you?"},
+            {"option": "What have you already tried?"}
+        ],
+        "explanation": "This employee does not know what they are supposed to do. Telling them what they need to do will help change this behavior."
+    },
+    {
+        "id": "3",
+        "category": "Skill",
+        "question": "Do they know how to do it?",
+        "hit": {
+            "buttonText": "No",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "Yes",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Train them or give them practice",
+        "suggestedQuestions": [
+            {"option": "What steps do you need to do?"},
+            {"option": "How you are going to do it?"}
+        ],
+        "explanation": "This employee does not know demonstrate the target behavior. Training will help change this behavior."
+    },
+    {
+        "id": "4",
+        "category": "Skill",
+        "question": "Are they confident in their ability to do it?",
+        "hit": {
+            "buttonText": "No",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "Yes",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Give them performance feedback",
+        "suggestedQuestions": [
+            {"option": "How will you know if you are successful?"},
+            {"option": "Why are you unable to do it? (specify action)"}
+        ],
+        "explanation": "This employee is not confident in their ability to demonstrate the target behavior. Providing performance feedback can help build the employee's confidence."
+    },
+    {
+        "id": "5",
+        "category": "Skill",
+        "question": "Are there obstacles beyond their control?",
+        "hit": {
+            "buttonText": "Yes",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "No",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Remove obstacles",
+        "suggestedQuestions": [
+            {"option": "What do you think is stopping you?"},
+            {"option": "What roadblocks do you see?"}
+        ],
+        "explanation": "Removing the obstacles will help the employee demonstrate the target behavior."
+    },
+    {
+        "id": "6",
+        "category": "Motivation",
+        "question": "Do they know why they should do it?",
+        "hit": {
+            "buttonText": "No",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "Yes",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Tell them!",
+        "suggestedQuestions": [
+            {"option": "Why do you think should we do this?"},
+            {"option": "How will you benefit from this?"}
+        ],
+        "explanation": "Telling an employee why they should exhibit the target behavior will help them understand the reason for the behavioral expectation."
+    },
+    {
+        "id": "7",
+        "category": "Motivation",
+        "question": "Do they think your way will not work?",
+        "hit": {
+            "buttonText": "Yes",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "No",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Convince them",
+        "suggestedQuestions": [
+            {"option": "What could you do differently?"},
+            {"option": "How have you tacked this/a similar situation before?"}
+        ],
+        "explanation": "Convincing the employee will help them understand why the target behavior is necessary for success."
+    },
+    {
+        "id": "8",
+        "category": "Motivation",
+        "question": "Do they think their way is better?",
+        "hit": {
+            "buttonText": "Yes",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "No",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Review options and agree on direction",
+        "suggestedQuestions": [
+            {"option": "Why do you think will that work?"},
+            {"option": "What has worked for you already?"}
+        ],
+        "explanation": "Reviewing the options will help determine what behavior will best compliment the employee's style."
+    },
+    {
+        "id": "9",
+        "category": "Motivation",
+        "question": "Do they think something else is more important?",
+        "hit": {
+            "buttonText": "Yes",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "No",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Explain priorities",
+        "suggestedQuestions": [
+            {"option": "What goal do you want to achieve?"},
+            {"option": "Why do you think _______ needs to be prioritized?"}
+        ],
+        "explanation": "Explaining priorities will help the employee understand what they need to focus on when managing their time."
+    },
+    {
+        "id": "10",
+        "category": "Motivation",
+        "question": "Do they feel rewarded/reinforced when they perform properly or as expected?",
+        "hit": {
+            "buttonText": "No",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "Yes",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Give positive reinforcement",
+        "suggestedQuestions": [
+            {"option": "How does this benefit you?"},
+            {"option": "Will doing this task help improve your performance?"}
+        ],
+        "explanation": "Providing positive reinforcement will help the employee feel rewarded for proper performance."
+    },
+    {
+        "id": "11",
+        "category": "Motivation",
+        "question": "Do they feel punished or NOT reinforced when they perform properly or as expected?",
+        "hit": {
+            "buttonText": "Yes",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "No",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Remove negative consequences, reinforce or balance with positive",
+        "suggestedQuestions": [
+            {"option": "How does this impact you?"},
+            {"option": "What would happen if you did that?"}
+        ],
+        "explanation": "Providing positive reinforcement will help the employee feel rewarded for proper performance."
+    },
+    {
+        "id": "12",
+        "category": "Motivation",
+        "question": "Do they think there will be consequences when they perform properly or as expected?",
+        "hit": {
+            "buttonText": "Yes",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "No",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Correct their understanding",
+        "suggestedQuestions": [
+            {"option": "How will this impact your performance?"},
+            {"option": "What sacrifices do you have to make in exchange for doing this?"}
+        ],
+        "explanation": "Correcting the employee's understanding will help separate positive from negative behaviors."
+    },
+    {
+        "id": "13",
+        "category": "Motivation",
+        "question": "Do they feel rewarded or reinforced when their performance is inappropriate or not as expected?",
+        "hit": {
+            "buttonText": "Yes",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "No",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Change consequences",
+        "suggestedQuestions": [
+            {"option": "What would happen if you did nothing?"},
+            {"option": "Will your performance be impacted if you chose to not do it?"}
+        ],
+        "explanation": "Changing the consequences will help reinforce positive behaviors and discourage negative ones."
+    },
+    {
+        "id": "14",
+        "category": "Motivation",
+        "question": "Do they think they can perform inappropriately without receiving negative consequences?",
+        "hit": {
+            "buttonText": "Yes",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "No",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Deliver negative consequences",
+        "suggestedQuestions": [
+            {"option": "What will happen if you are not able to do this?"},
+            {"option": "What is the cost of not doing this?"}
+        ],
+        "explanation": "Delivering negative consequences will help reinforce positive behaviors and discourage negative ones."
+    },
+    {
+        "id": "15",
+        "category": "Will",
+        "question": "Are personal problems interfering?",
+        "hit": {
+            "buttonText": "Yes",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "No",
+            "buttonURL": "step({ stepId: $ctrl.nextStep() })"
+        },
+        "result": "Accommodate the problem or get employee to solve",
+        "suggestedQuestions": [
+            {"option": "Is there anything outside of work that is impacting your tasks?"},
+            {"option": "What other obstacles do you foresee?"}
+        ],
+        "explanation": "Accomodating the personal problem or encouraging the employee to resolve it will help remove the obstacle."
+    },
+    {
+        "id": "16",
+        "category": "Will",
+        "question": "Could they do it if they chose to do it?",
+        "hit": {
+            "buttonText": "Yes",
+            "buttonURL": "action({ stepId: $ctrl.behavior.id })"
+        },
+        "miss": {
+            "buttonText": "No",
+            "buttonURL": "action({ stepId: 17 })"
+        },
+        "result": "Use the coaching discussion to change behavior or move to progressive counseling",
+        "suggestedQuestions": [
+            {"option": "Have you already taken any steps in doing this?"},
+            {"option": "How committed do you feel to this task?"}
+        ],
+        "explanation": "The coaching discussion is the best time to focus on changing the behavior or moving the employee to progressive counselling to discourage the negative behavior."
+    },
+    {
+        "id": "17",
+        "category": "last",
+        "last": true,
+        "result": "Transfer to better suited job or put on performance plan",
+        "explanation": "The employee may not be suited to the job. Transferring them to a better suited job will help the employee get a chance to demonstrate their strengths. Performance plans can be used for employees that are not eligible for a transfer."
+    }
+]

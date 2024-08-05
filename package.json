@@ -1,0 +1,28 @@
+{
+    "name": "behavioral-flowchart",
+    "version": "0.0.1",
+    "description": "Behavioral Flowchart",
+    "main": "server.js",
+    "repository": "",
+    "license": "ISC",
+    "dependencies": {
+        "@uirouter/angularjs": "^1.0.20",
+        "@uirouter/visualizer": "^6.0.2",
+        "angular": "^1.6.0",
+        "angular-animate": "^1.6.0",
+        "angular-aria": "^1.6.0",
+        "angular-material": "^1.1.1",
+        "angular-messages": "^1.6.0",
+        "es5-shim": "^4.5.9",
+        "es6-shim": "^0.35.2",
+        "npm": "^6.4.1"
+    },
+    "devDependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.3",
+        "method-override": "^3.0.0"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
